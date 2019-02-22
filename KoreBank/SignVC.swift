@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SignVC.swift
 //  KoreBank
 //
 //  Created by Prudhvi Gadiraju on 2/21/19.
@@ -14,12 +14,9 @@ class SignVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        signInButton.layer.cornerRadius = 41
-    }
+        signInButton.layer.cornerRadius = 30
 
+    }
     @IBAction func signInButtonPressed(_ sender: Any) {
-        // Go to sign in screen
     }
-    
 }
-

@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C067C2E7294DB0E8E358A82 /* Pods_KoreBankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3A6AC5D2990A61FE961B54 /* Pods_KoreBankUITests.framework */; };
+		79E16E4322BD58D8610A0932 /* Pods_KoreBank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52654935983B25A4002CCA31 /* Pods_KoreBank.framework */; };
 		A4CB5255221F3A5C00B331EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB5254221F3A5C00B331EC /* AppDelegate.swift */; };
-		A4CB5257221F3A5C00B331EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB5256221F3A5C00B331EC /* ViewController.swift */; };
 		A4CB525A221F3A5C00B331EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CB5258221F3A5C00B331EC /* Main.storyboard */; };
 		A4CB525D221F3A5C00B331EC /* KoreBank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4CB525B221F3A5C00B331EC /* KoreBank.xcdatamodeld */; };
 		A4CB525F221F3A5D00B331EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4CB525E221F3A5D00B331EC /* Assets.xcassets */; };
 		A4CB5262221F3A5D00B331EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4CB5260221F3A5D00B331EC /* LaunchScreen.storyboard */; };
 		A4CB526D221F3A5D00B331EC /* KoreBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB526C221F3A5D00B331EC /* KoreBankTests.swift */; };
 		A4CB5278221F3A5D00B331EC /* KoreBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB5277221F3A5D00B331EC /* KoreBankUITests.swift */; };
+		A4CB5286221F405D00B331EC /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB5285221F405D00B331EC /* SignInVC.swift */; };
+		A4CB5288221F426200B331EC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB5287221F426200B331EC /* HomeVC.swift */; };
+		A4CB528A221F438B00B331EC /* SignVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CB5289221F438B00B331EC /* SignVC.swift */; };
+		A4CB528C221F457600B331EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4CB528B221F457600B331EC /* GoogleService-Info.plist */; };
+		A4F7BA4722207ECB00E705A4 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F7BA4622207ECB00E705A4 /* SignUpVC.swift */; };
+		C11EFDC16E63804C3A2BA897 /* Pods_KoreBankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B48D3028DA9B58F6C373D65 /* Pods_KoreBankTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0248A803416A7A68A20F7129 /* Pods-KoreBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreBankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreBankUITests/Pods-KoreBankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4E3A6AC5D2990A61FE961B54 /* Pods_KoreBankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreBankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F11EFE5ACB8B40F3F7D8DA3 /* Pods-KoreBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreBank.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreBank/Pods-KoreBank.release.xcconfig"; sourceTree = "<group>"; };
+		52654935983B25A4002CCA31 /* Pods_KoreBank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreBank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B48D3028DA9B58F6C373D65 /* Pods_KoreBankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreBankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		828399DB2D8DFAF67C696BB9 /* Pods-KoreBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreBankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KoreBankUITests/Pods-KoreBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E0FA4AA6CA1CFB468A3E0ED /* Pods-KoreBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreBankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KoreBankTests/Pods-KoreBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4CB5251221F3A5C00B331EC /* KoreBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB5254221F3A5C00B331EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A4CB5256221F3A5C00B331EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A4CB5259221F3A5C00B331EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4CB525C221F3A5C00B331EC /* KoreBank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KoreBank.xcdatamodel; sourceTree = "<group>"; };
 		A4CB525E221F3A5D00B331EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +62,13 @@
 		A4CB5273221F3A5D00B331EC /* KoreBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoreBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CB5277221F3A5D00B331EC /* KoreBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreBankUITests.swift; sourceTree = "<group>"; };
 		A4CB5279221F3A5D00B331EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4CB5285221F405D00B331EC /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		A4CB5287221F426200B331EC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		A4CB5289221F438B00B331EC /* SignVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignVC.swift; sourceTree = "<group>"; };
+		A4CB528B221F457600B331EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4F7BA4622207ECB00E705A4 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D3BEDF0467B47BDF827B81FC /* Pods-KoreBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreBank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KoreBank/Pods-KoreBank.debug.xcconfig"; sourceTree = "<group>"; };
+		F87131788EBC9AA866AAB645 /* Pods-KoreBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreBankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreBankTests/Pods-KoreBankTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E16E4322BD58D8610A0932 /* Pods_KoreBank.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11EFDC16E63804C3A2BA897 /* Pods_KoreBankTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C067C2E7294DB0E8E358A82 /* Pods_KoreBankUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44CAF80FB84BE968BDCF4582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52654935983B25A4002CCA31 /* Pods_KoreBank.framework */,
+				7B48D3028DA9B58F6C373D65 /* Pods_KoreBankTests.framework */,
+				4E3A6AC5D2990A61FE961B54 /* Pods_KoreBankUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5448A5911419EC4EFA7F3333 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D3BEDF0467B47BDF827B81FC /* Pods-KoreBank.debug.xcconfig */,
+				4F11EFE5ACB8B40F3F7D8DA3 /* Pods-KoreBank.release.xcconfig */,
+				8E0FA4AA6CA1CFB468A3E0ED /* Pods-KoreBankTests.debug.xcconfig */,
+				F87131788EBC9AA866AAB645 /* Pods-KoreBankTests.release.xcconfig */,
+				828399DB2D8DFAF67C696BB9 /* Pods-KoreBankUITests.debug.xcconfig */,
+				0248A803416A7A68A20F7129 /* Pods-KoreBankUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A4CB5248221F3A5C00B331EC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				A4CB526B221F3A5D00B331EC /* KoreBankTests */,
 				A4CB5276221F3A5D00B331EC /* KoreBankUITests */,
 				A4CB5252221F3A5C00B331EC /* Products */,
+				5448A5911419EC4EFA7F3333 /* Pods */,
+				44CAF80FB84BE968BDCF4582 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,11 +148,15 @@
 			isa = PBXGroup;
 			children = (
 				A4CB5254221F3A5C00B331EC /* AppDelegate.swift */,
-				A4CB5256221F3A5C00B331EC /* ViewController.swift */,
+				A4CB5289221F438B00B331EC /* SignVC.swift */,
+				A4CB5285221F405D00B331EC /* SignInVC.swift */,
+				A4F7BA4622207ECB00E705A4 /* SignUpVC.swift */,
+				A4CB5287221F426200B331EC /* HomeVC.swift */,
 				A4CB5258221F3A5C00B331EC /* Main.storyboard */,
 				A4CB525E221F3A5D00B331EC /* Assets.xcassets */,
 				A4CB5260221F3A5D00B331EC /* LaunchScreen.storyboard */,
 				A4CB5263221F3A5D00B331EC /* Info.plist */,
+				A4CB528B221F457600B331EC /* GoogleService-Info.plist */,
 				A4CB525B221F3A5C00B331EC /* KoreBank.xcdatamodeld */,
 			);
 			path = KoreBank;
@@ -135,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4CB527C221F3A5D00B331EC /* Build configuration list for PBXNativeTarget "KoreBank" */;
 			buildPhases = (
+				5A78383BD235798D76B561F7 /* [CP] Check Pods Manifest.lock */,
 				A4CB524D221F3A5C00B331EC /* Sources */,
 				A4CB524E221F3A5C00B331EC /* Frameworks */,
 				A4CB524F221F3A5C00B331EC /* Resources */,
+				F7745D69243A40D76F96C1AA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4CB527F221F3A5D00B331EC /* Build configuration list for PBXNativeTarget "KoreBankTests" */;
 			buildPhases = (
+				A7633642F2D8640BCD2A5C57 /* [CP] Check Pods Manifest.lock */,
 				A4CB5264221F3A5D00B331EC /* Sources */,
 				A4CB5265221F3A5D00B331EC /* Frameworks */,
 				A4CB5266221F3A5D00B331EC /* Resources */,
@@ -170,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A4CB5282221F3A5D00B331EC /* Build configuration list for PBXNativeTarget "KoreBankUITests" */;
 			buildPhases = (
+				70B930FC3184E9862479D6E6 /* [CP] Check Pods Manifest.lock */,
 				A4CB526F221F3A5D00B331EC /* Sources */,
 				A4CB5270221F3A5D00B331EC /* Frameworks */,
 				A4CB5271221F3A5D00B331EC /* Resources */,
@@ -233,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4CB5262221F3A5D00B331EC /* LaunchScreen.storyboard in Resources */,
+				A4CB528C221F457600B331EC /* GoogleService-Info.plist in Resources */,
 				A4CB525F221F3A5D00B331EC /* Assets.xcassets in Resources */,
 				A4CB525A221F3A5C00B331EC /* Main.storyboard in Resources */,
 			);
@@ -254,14 +311,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A78383BD235798D76B561F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoreBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70B930FC3184E9862479D6E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoreBankUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7633642F2D8640BCD2A5C57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoreBankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7745D69243A40D76F96C1AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KoreBank/Pods-KoreBank-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KoreBank/Pods-KoreBank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A4CB524D221F3A5C00B331EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4CB5257221F3A5C00B331EC /* ViewController.swift in Sources */,
+				A4CB5288221F426200B331EC /* HomeVC.swift in Sources */,
 				A4CB5255221F3A5C00B331EC /* AppDelegate.swift in Sources */,
+				A4CB5286221F405D00B331EC /* SignInVC.swift in Sources */,
 				A4CB525D221F3A5C00B331EC /* KoreBank.xcdatamodeld in Sources */,
+				A4F7BA4722207ECB00E705A4 /* SignUpVC.swift in Sources */,
+				A4CB528A221F438B00B331EC /* SignVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +599,7 @@
 		};
 		A4CB527D221F3A5D00B331EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3BEDF0467B47BDF827B81FC /* Pods-KoreBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +618,7 @@
 		};
 		A4CB527E221F3A5D00B331EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F11EFE5ACB8B40F3F7D8DA3 /* Pods-KoreBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +637,7 @@
 		};
 		A4CB5280221F3A5D00B331EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E0FA4AA6CA1CFB468A3E0ED /* Pods-KoreBankTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +659,7 @@
 		};
 		A4CB5281221F3A5D00B331EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F87131788EBC9AA866AAB645 /* Pods-KoreBankTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +681,7 @@
 		};
 		A4CB5283221F3A5D00B331EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 828399DB2D8DFAF67C696BB9 /* Pods-KoreBankUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +702,7 @@
 		};
 		A4CB5284221F3A5D00B331EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0248A803416A7A68A20F7129 /* Pods-KoreBankUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
