@@ -11,6 +11,7 @@ import Firebase
 
 class SignUpVC: UIViewController {
 
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -28,6 +29,7 @@ class SignUpVC: UIViewController {
     
     @IBAction func signUpButtonPressed(_ sender: Any) {
         
+        guard let nameText = nameTextField.text else {return}
         guard let emailText = emailTextField.text else {return}
         guard let phoneNumberText = phoneNumberTextField.text else {return}
         guard let passwordText = passwordTextField.text else {return}
@@ -38,13 +40,15 @@ class SignUpVC: UIViewController {
             }
             
             guard let uid = user?.user.uid else {return}
-            Firestore.firestore().collection("user").document(uid).setData([
+            Firestore.firestore().collection("users").document(uid).setData([
                 "email" : emailText,
+                "name" : nameText,
                 "phoneNumber" : phoneNumberText,
+                "balance" : 100,
                 "dateCreated" : FieldValue.serverTimestamp()
                 ], completion: { (error) in
                 if let error = error {
-                    debugPrint(error.localizedDescription)
+                    debugPrint("Creating User Error: \(error.localizedDescription)")
                 } else {
                     print("created user: \(emailText)")
                     self.dismiss(animated: true, completion: nil)

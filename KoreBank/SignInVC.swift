@@ -34,7 +34,7 @@ class SignInVC: UIViewController {
             } else {
                 print("Signed in as \(String(describing: user!.user.email))")
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let homeVC = storyboard.instantiateViewController(withIdentifier: "homeVC")
+                let tabVC = storyboard.instantiateViewController(withIdentifier: "tabViewController")
                 
                 let transition = CATransition()
                 transition.duration = 0.5
@@ -43,7 +43,7 @@ class SignInVC: UIViewController {
                 transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
                 self.view.window!.layer.add(transition, forKey: kCATransition)
                 
-                self.present(homeVC, animated: false, completion: nil)
+                self.present(tabVC, animated: false, completion: nil)
             }
         }
     }
