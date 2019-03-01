@@ -10,7 +10,7 @@ import UIKit
 
 class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
-    let duration = 0.18
+    let duration = 0.25
     var presenting = true
     var originalSize = CGRect.zero
     
@@ -22,10 +22,7 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let containerView = transitionContext.containerView
         let toView = transitionContext.view(forKey: .to)!
         let fromView = transitionContext.view(forKey: .from)!
-        
-  
 
-        //toView.alpha = 0
         if presenting {
             containerView.addSubview(toView)
             containerView.bringSubviewToFront(toView)
@@ -35,7 +32,6 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         } else {
             containerView.addSubview(toView)
             containerView.sendSubviewToBack(toView)
-            fromView.layer.cornerRadius = 14
         }
         
         UIView.animate(withDuration: duration, delay: 0.0, options: .curveEaseInOut, animations: {
@@ -43,10 +39,13 @@ class PopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
                 toView.transform = CGAffineTransform.identity
                 toView.center = CGPoint(x: containerView.center.x, y: containerView.center.y)
             } else {
-                fromView.transform = CGAffineTransform.init(scaleX: self.originalSize.width/containerView.frame.width, y: self.originalSize.height/containerView.frame.height)
+                fromView.transform = CGAffineTransform.init(scaleX: self.originalSize.width/(containerView.frame.width), y: self.originalSize.height/(containerView.frame.height))
                 fromView.center = CGPoint(x: self.originalSize.midX, y: self.originalSize.midY)
+                
+                UIView.animate(withDuration: self.duration-0.05, delay: 0.15, options: .curveEaseInOut, animations: {
+                    fromView.alpha = 0
+                })
             }
-            //toView.alpha = 1
         }) { (true) in
             transitionContext.completeTransition(true)
         }

@@ -31,25 +31,7 @@ class HomeVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         checkUser()
-    }
-    
-    @IBAction func payNowButtonPressed(_ sender: Any) {
-        selectedButton = payNowButton
-        let payNowVC = storyBoard.instantiateViewController(withIdentifier: "payNowVC")
-        payNowVC.transitioningDelegate = self
-        present(payNowVC, animated: true, completion: nil)
-    }
-    @IBAction func requestButtonPressed(_ sender: Any) {
-        selectedButton = requestButton
-        let requestVC = storyBoard.instantiateViewController(withIdentifier: "requestVC")
-        requestVC.transitioningDelegate = self
-        present(requestVC, animated: true, completion: nil)
-    }
-    @IBAction func addToWalletButtonPressed(_ sender: Any) {
-        selectedButton = addToWalletButton
-        let addToWalletVC = storyBoard.instantiateViewController(withIdentifier: "addToWalletVC")
-        addToWalletVC.transitioningDelegate = self
-        present(addToWalletVC, animated: true, completion: nil)
+        updateBalance()
     }
     
     func setupView() {
@@ -62,9 +44,30 @@ class HomeVC: UIViewController {
                 guard let snap = snapshot else {return}
                 guard let data = snap.data() else {return}
                 self.addNav(text: "Hello, \(data["name"] as! String)")
-                self.addBalance(balance: data["balance"] as! Double)
+                self.addBalance(balance: data["balance"]!)
             }
         }
+    }
+    
+    @IBAction func payNowButtonPressed(_ sender: Any) {
+        selectedButton = payNowButton
+        let payNowVC = storyBoard.instantiateViewController(withIdentifier: "payNowVC")
+        payNowVC.transitioningDelegate = self
+        present(payNowVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func requestButtonPressed(_ sender: Any) {
+        selectedButton = requestButton
+        let requestVC = storyBoard.instantiateViewController(withIdentifier: "requestVC")
+        requestVC.transitioningDelegate = self
+        present(requestVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func addToWalletButtonPressed(_ sender: Any) {
+        selectedButton = addToWalletButton
+        let addToWalletVC = storyBoard.instantiateViewController(withIdentifier: "addToWalletVC")
+        addToWalletVC.transitioningDelegate = self
+        present(addToWalletVC, animated: true, completion: nil)
     }
     
     func addNav(text: String) {
@@ -72,8 +75,23 @@ class HomeVC: UIViewController {
         customLargeTitleView.addCustomLargeTitle(view: view, text: "\(text) ")
     }
     
-    func addBalance(balance: Double) {
+    func addBalance(balance: Any) {
         balanceLabel.text = "$\(balance)"
+    }
+    
+    func updateBalance() {
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+
+        Firestore.firestore().collection("users").document(uid).getDocument { (snapshot, error) in
+            if let error = error {
+                debugPrint(error.localizedDescription)
+            } else {
+                guard let snap = snapshot else {return}
+                guard let data = snap.data() else {return}
+                let balance = data["balance"]!
+                self.balanceLabel.text = "$\(balance)"
+            }
+        }
     }
     
     func checkUser() {

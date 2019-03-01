@@ -14,7 +14,7 @@ class AddToWalletVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view.addGradient(color1: #colorLiteral(red: 0.09019607843, green: 0.9176470588, blue: 0.8509803922, alpha: 1), color2: #colorLiteral(red: 0.3764705882, green: 0.4705882353, blue: 0.9176470588, alpha: 1))
     }
     @IBAction func closeButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)

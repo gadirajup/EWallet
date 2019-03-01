@@ -84,7 +84,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vpe-Gv-JXH">
                                 <rect key="frame" x="46" y="271" width="297" height="1"/>
@@ -422,17 +422,81 @@
                                     <action selector="closeButtonPressed:" destination="V2B-8p-RFB" eventType="touchUpInside" id="xSN-7l-xzy"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SiI-lV-PCs">
+                                <rect key="frame" x="42" y="166" width="291" height="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJf-Xw-YsH">
+                                <rect key="frame" x="42" y="199" width="291" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GGX-P6-3tD"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jQg-NQ-x25">
+                                <rect key="frame" x="42" y="216" width="291" height="33"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="24"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KJ-qC-DMI">
+                                <rect key="frame" x="42" y="249" width="291" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="HTY-vJ-Z6g"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay Now" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gI-hV-F8Y">
+                                <rect key="frame" x="137.66666666666666" y="93" width="100" height="33"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPL-EU-9pW">
+                                <rect key="frame" x="299" y="718" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CII-kf-Vu2"/>
+                                    <constraint firstAttribute="width" constant="60" id="XyR-76-cLS"/>
+                                </constraints>
+                                <state key="normal" image="NextButton"/>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="V2B-8p-RFB" eventType="touchUpInside" id="NOe-rj-BVq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.91172271966934204" green="0.42925718426704407" blue="0.54510051012039185" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="8gI-hV-F8Y" firstAttribute="centerX" secondItem="9ou-0G-Fm7" secondAttribute="centerX" id="0fo-ED-tTG"/>
+                            <constraint firstItem="2KJ-qC-DMI" firstAttribute="leading" secondItem="QMg-8e-TMw" secondAttribute="leading" constant="42" id="30V-ag-fce"/>
+                            <constraint firstItem="8gI-hV-F8Y" firstAttribute="top" secondItem="QMg-8e-TMw" secondAttribute="top" constant="49" id="G1k-3m-DbM"/>
+                            <constraint firstItem="SiI-lV-PCs" firstAttribute="leading" secondItem="QMg-8e-TMw" secondAttribute="leading" constant="42" id="LlL-Lo-4mZ"/>
+                            <constraint firstItem="IJf-Xw-YsH" firstAttribute="top" secondItem="SiI-lV-PCs" secondAttribute="bottom" id="MRn-bz-YCf"/>
+                            <constraint firstItem="IJf-Xw-YsH" firstAttribute="leading" secondItem="QMg-8e-TMw" secondAttribute="leading" constant="42" id="Sxj-qX-4c9"/>
+                            <constraint firstItem="QMg-8e-TMw" firstAttribute="trailing" secondItem="rPL-EU-9pW" secondAttribute="trailing" constant="16" id="UNU-8c-mlU"/>
+                            <constraint firstItem="QMg-8e-TMw" firstAttribute="trailing" secondItem="SiI-lV-PCs" secondAttribute="trailing" constant="42" id="V1W-Ln-xF4"/>
+                            <constraint firstItem="2KJ-qC-DMI" firstAttribute="top" secondItem="jQg-NQ-x25" secondAttribute="bottom" id="V9I-Sx-RLA"/>
+                            <constraint firstItem="jQg-NQ-x25" firstAttribute="leading" secondItem="QMg-8e-TMw" secondAttribute="leading" constant="42" id="cq0-sE-sio"/>
+                            <constraint firstItem="QMg-8e-TMw" firstAttribute="trailing" secondItem="2KJ-qC-DMI" secondAttribute="trailing" constant="42" id="hkS-hI-OJ8"/>
+                            <constraint firstItem="rPL-EU-9pW" firstAttribute="bottom" secondItem="QMg-8e-TMw" secondAttribute="bottom" id="iXi-NR-fCt"/>
+                            <constraint firstItem="SiI-lV-PCs" firstAttribute="top" secondItem="8gI-hV-F8Y" secondAttribute="bottom" constant="40" id="p2R-Bg-OiJ"/>
+                            <constraint firstItem="QMg-8e-TMw" firstAttribute="trailing" secondItem="IJf-Xw-YsH" secondAttribute="trailing" constant="42" id="pWn-Rh-aM9"/>
+                            <constraint firstItem="jQg-NQ-x25" firstAttribute="top" secondItem="IJf-Xw-YsH" secondAttribute="bottom" constant="16" id="rTK-NV-XhM"/>
+                            <constraint firstItem="QMg-8e-TMw" firstAttribute="trailing" secondItem="jQg-NQ-x25" secondAttribute="trailing" constant="42" id="v8K-Yj-yVI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="QMg-8e-TMw"/>
                     </view>
                     <connections>
+                        <outlet property="amountTextField" destination="jQg-NQ-x25" id="Kb3-W7-sgJ"/>
                         <outlet property="closeButton" destination="igB-eu-Bl8" id="4zW-V5-Wux"/>
+                        <outlet property="nextButton" destination="rPL-EU-9pW" id="vca-hi-h7Q"/>
+                        <outlet property="phoneNumberTextField" destination="SiI-lV-PCs" id="oUI-B0-7e7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lv-HT-xRq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2310" y="729"/>
+            <point key="canvasLocation" x="2309.5999999999999" y="727.83251231527095"/>
         </scene>
         <!--RequestVC-->
         <scene sceneID="iRp-GC-bS4">
@@ -598,6 +662,7 @@
         <image name="BalanceView" width="329" height="138"/>
         <image name="CloseButton" width="28.333333969116211" height="28.333333969116211"/>
         <image name="Logo_White_iOS" width="160" height="145"/>
+        <image name="NextButton" width="78" height="78"/>
         <image name="PayNow" width="166.33332824707031" height="138"/>
         <image name="Request" width="166" height="138"/>
         <image name="Tab 1" width="27" height="25"/>

@@ -140,6 +140,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A41297CB2224B73100469ABC /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				A4F7BA482220C21100E705A4 /* CustomTBC.swift */,
+				A4F7BA4E2220DB3600E705A4 /* CustomLargeTitleView.swift */,
+				A41297C12223A08400469ABC /* ViewGradientExtension.swift */,
+				A41297C52223A32D00469ABC /* PopAnimator.swift */,
+				A4F7BA502220DD5A00E705A4 /* FirestoreAuthentication.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
 		A4CB5248221F3A5C00B331EC = {
 			isa = PBXGroup;
 			children = (
@@ -171,17 +183,13 @@
 				A4F7BA4622207ECB00E705A4 /* SignUpVC.swift */,
 				A4CB5287221F426200B331EC /* HomeVC.swift */,
 				A41297C32223A15E00469ABC /* PayNowVC.swift */,
-				A4F7BA4A2220C48B00E705A4 /* ProfileVC.swift */,
-				A4CB5258221F3A5C00B331EC /* Main.storyboard */,
 				A41297C72224B38F00469ABC /* RequestVC.swift */,
 				A41297C92224B3AA00469ABC /* AddToWalletVC.swift */,
+				A4F7BA4A2220C48B00E705A4 /* ProfileVC.swift */,
+				A4CB5258221F3A5C00B331EC /* Main.storyboard */,
 				A4CB5260221F3A5D00B331EC /* LaunchScreen.storyboard */,
 				A4CB525E221F3A5D00B331EC /* Assets.xcassets */,
-				A4F7BA482220C21100E705A4 /* CustomTBC.swift */,
-				A4F7BA4E2220DB3600E705A4 /* CustomLargeTitleView.swift */,
-				A41297C12223A08400469ABC /* ViewGradientExtension.swift */,
-				A41297C52223A32D00469ABC /* PopAnimator.swift */,
-				A4F7BA502220DD5A00E705A4 /* FirestoreAuthentication.swift */,
+				A41297CB2224B73100469ABC /* CustomClasses */,
 				A4CB5263221F3A5D00B331EC /* Info.plist */,
 				A4CB528B221F457600B331EC /* GoogleService-Info.plist */,
 				A4CB525B221F3A5C00B331EC /* KoreBank.xcdatamodeld */,
